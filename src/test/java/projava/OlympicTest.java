@@ -15,7 +15,6 @@ class OlympicTest {
         assertTrue(new Olympic().isSummerOlympicYear(1896), "1896年");
     }
 
-
     @Test
     void 四年周期の一般的な開催年() {
         int[] years = {1900, 1920, 1964, 1936, 2001};
@@ -26,7 +25,7 @@ class OlympicTest {
 
     @Test
     void 四年周期から外れる非開催年() {
-        int[] years = {1905, 1907, 1925, 1967, 2000};
+        int[] years = {1905, 1907, 1925, 1967, 2001};
         for (int year : years) {
             assertFalse(new Olympic().isSummerOlympicYear(year), year + "年");
         }
