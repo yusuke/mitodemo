@@ -33,7 +33,7 @@ class OlympicTest {
 
     @Test
     void 戦争またはパンデミックで中止となった年() {
-        int[] years = {1916, 1940, 1944, 2020};
+        int[] years = {1916, 1940, 1944, 2021};
         for (int year : years) {
             assertFalse(new Olympic().isSummerOlympicYear(year), year + "年");
         }
